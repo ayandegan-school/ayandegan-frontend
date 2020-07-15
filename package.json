@@ -1,0 +1,11 @@
+{
+  "name": "ayandegan",
+  "version": "1.0.0",
+  "description": "Ayandegan high school",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mkazemiraz",
+  "license": "ISC"
+}
