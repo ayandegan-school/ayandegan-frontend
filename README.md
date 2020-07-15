@@ -14,6 +14,18 @@ These instructions will get you a copy of the project up and running on your loc
     
     `npm install --global gulp-cli`
 
+### Installing
+A step by step series of examples that tell you how to get a development env running
+1. Open your terminal & navigate to project directory
+2. Install node_modules
+
+    `npm install`
+3. Run the gulp command in your project directory
+
+    `gulp`
+4. Check build folder!
+
 ## Authors
 
-Mkazemiraz & Mnasrollahi
+* [Mkazemiraz](https://github.com/mkazemiraz)
+* [M-Nasrollahi](https://github.com/mona-n67)
