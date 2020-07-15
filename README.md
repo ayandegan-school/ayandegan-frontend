@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. [Install node & npm](https://nodejs.org/en/download/)
 2. Install the gulp command line utility
     
-    `npm install --global gulp-cli`
+    npm install --global gulp-cli
 
 ## Authors
 
