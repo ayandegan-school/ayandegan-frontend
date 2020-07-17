@@ -7,7 +7,6 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
-
 // File path variables
 const files = {
     scssPath: './src/styles/**/*.scss',
