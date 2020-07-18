@@ -1,0 +1,37 @@
+#top-header {
+    background-color: #1A2930;
+    color: #fff;
+    font-size: 15px;
+
+    .top-header-hadith {
+        flex-grow: 1;
+    }
+    
+    .top-header-social-medias {
+        a {
+            color: rgba(255, 255, 255, .6);
+            padding-top: 6px;
+            padding-bottom: 6px;
+            transition: all .3s;
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    .top-header-login {
+        button {
+            background-color: #F9CE00;
+            border-radius: 0;
+            padding: 8px 25px;
+            transition: all .3s;
+            &:hover {
+                background-color: darken($color: #F9CE00, $amount: 3%);
+            }
+        }
+        a {
+            color: #1A2930;
+            text-decoration: none;
+        }
+    }
+}

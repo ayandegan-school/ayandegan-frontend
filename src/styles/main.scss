@@ -44,77 +44,82 @@
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-
 @import "bootstrap/rtl";
 
-#header{
-    background-color: rgb(0, 0, 0); 
-    height: 50px;
-    color: rgb(255, 255, 255);
- }
 
-#hadis{
-    background-color: transparent;
-    float: right;
-    width: 250px;
-    height: 38px;
-    margin:10px 20px 0px auto;
-    text-align: center;
-    font-size: large;
+
+
+// Layouts
+@import "ayandegan/layout/top-header";
+
+// #header{
+//     background-color: rgb(0, 0, 0); 
+//     height: 50px;
+//     color: rgb(255, 255, 255);
+//  }
+
+// #hadis{
+//     background-color: transparent;
+//     float: right;
+//     width: 250px;
+//     height: 38px;
+//     margin:10px 20px 0px auto;
+//     text-align: center;
+//     font-size: large;
     
-  }
+//   }
 
-#social{
-    float: right;
-    background-color:transparent;
-    width: 200px;
-    height: 38px;
-    margin:10px 600px 10px auto;
-    text-align: center;
-}
+// #social{
+//     float: right;
+//     background-color:transparent;
+//     width: 200px;
+//     height: 38px;
+//     margin:10px 600px 10px auto;
+//     text-align: center;
+// }
 
-#hide{
-    float: left;
-    background-color: transparent;
-    width: 150px;
-    height: 38px;
-    margin:10px 40px 10px auto;
+// #hide{
+//     float: left;
+//     background-color: transparent;
+//     width: 150px;
+//     height: 38px;
+//     margin:10px 40px 10px auto;
     
-}
+// }
 
-#login{
-    float: right;
-    background-color: transparent;
-    width: 150px;
-    height: 38px;
-    margin:10px 40px 10px auto;
-    text-align: right;
-}
+// #login{
+//     float: right;
+//     background-color: transparent;
+//     width: 150px;
+//     height: 38px;
+//     margin:10px 40px 10px auto;
+//     text-align: right;
+// }
 
 
-#login1{
-    margin-top: 3px;
+// #login1{
+//     margin-top: 3px;
    
-}  
+// }  
 
- .button{
-    display: inline-block;
-    position: relative;
-    margin:7px 40px 10px auto;
-    padding: 0px 20px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
-    border-radius: 15px;
-    font-size: large;
-}
+//  .button{
+//     display: inline-block;
+//     position: relative;
+//     margin:7px 40px 10px auto;
+//     padding: 0px 20px;
+//     text-align: center;
+//     text-decoration: none;
+//     text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+//     border-radius: 15px;
+//     font-size: large;
+// }
 
-.blue{
-   color: #ffffff;
-   background-color:transparent;
+// .blue{
+//    color: #ffffff;
+//    background-color:transparent;
    
-}
+// }
 
-.icon{
-    margin-top: 5px;
-}
+// .icon{
+//     margin-top: 5px;
+// }
