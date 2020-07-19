@@ -1,0 +1,14 @@
+#main-menu {
+    background-color: #1A2930;
+    font-size: 15px;
+    border-bottom: 3px solid #F9CE00;
+
+    .main-menu-sub-menu {
+        padding: 0;
+        a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+    }
+}

@@ -24,3 +24,15 @@ body {
     padding-right: 0;
     list-style: none;
 }
+
+.dropdown-toggle::after {
+    vertical-align: baseline;
+    margin-right: .255em;
+}
+
+.dropdown-menu {
+    text-align: right !important;
+    right: 0;
+    min-width: 11rem;
+    font-size: 14px;
+}

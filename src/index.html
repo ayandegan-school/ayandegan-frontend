@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <!-- Meta tags for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home page</title>
+    <!-- Favicon -->
+    <link rel='icon' href='./assets/images/favicon.ico' type='image/x-icon'>
+    <title>صفحه نخست | پیش دبستان و دبستان غیردولتی هوشمند آیندگان</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Lineawsome Icons -->
@@ -15,31 +17,6 @@
 
 </head>
 <body>
-    <!-- <div id="header" class="d-none d-lg-flex align-items-center fixed-top">
-
-        <section id="hadis">
-            حدیث روز
-        </section>
-            
-        <section id="hide"></section>
-
-        <section id="social">
-
-
-            <img class="icon" src="https://img.icons8.com/color/30/000000/facebook-new.png"/>
-            <img class="icon" src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>
-            <img class="icon" src="https://img.icons8.com/fluent/30/000000/twitter.png"/>
-            <img class="icon" src="https://img.icons8.com/fluent/30/000000/skype.png"/>
-            <img src="https://img.icons8.com/fluent/30/000000/telegram-app.png"/>
-        </section>
-
-        <section id="login"><a id="login1" href="#" class="button blue ">ورود</a></section>
-            
-            
-    </div> -->
-
-    
-
     <!-- Top header / not fully responsive -->
     <section id="top-header">
         <div class="container">
@@ -64,45 +41,72 @@
     </section>
     <!-- End of top header -->
 
-    <!-- logo -->
-    <section >
+    <!-- Branding -->
+    <section id="branding">
         <div class="container">
-            <div class="d-flex justify-content-end ">
-                <img src="../src/assets/images/logo.png" class=" img-fluid float-right" alt="Responsive image">
-                    <p style="margin: auto;">
-                        مدرسه ی  هوشمند غیرانتفاعی آیندگان
-                    </p>    
-                <img src="../src/assets/images/450x150.png" class="img-fluid float-left" alt="Responsive image">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <img src="./assets/images/450x150.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <img src="./assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>    
             </div>
         </div>
     </section>
-    <!-- end of logo -->
+    <!-- End of branding -->
 
-    <!-- menu -->
-    <nav class="nav navbar-inverse-lg bg-dark justify-content-center">
-        <ul class="nav ">
-            <li class="nav-item">
-                <a class="nav-link active text-light" href="#">صفحه اصلی</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">درباره ما</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">امکانات سایت</a>
-                    <div class="dropdown-menu">
-                         <a class="dropdown-item" href="#">اتاق گفتگو</a>
-                         <a class="dropdown-item" href="#">آلبوم</a>
-                    </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">اخبار</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">تماس با ما</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of menu -->
+    <!-- Menu -->
+    <header id="main-menu">
+        <nav class="navbar navbar-expand-md py-1">
+            <div class="container">
+                <div>
+                    <ul class="navbar-nav pr-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات مدرسه</a>
+                            <ul class="dropdown-menu main-menu-sub-menu">
+                                <li class="dropdown-item">
+                                    <a href="#">نمازخانه</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">آزمایشگاه</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">سایت کامپیوتر</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#">کتابخانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">اخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">مقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of menu -->
 
     <!-- JavaScript File -->
     <script src="./js/all.js"></script>
