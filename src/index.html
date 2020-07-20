@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Meta tags for responsive design -->
@@ -10,12 +11,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Lineawsome Icons -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- CSS File -->
     <link rel="stylesheet" href="./css/main.css">
 
 
 </head>
+
 <body>
     <!-- Top header / not fully responsive -->
     <section id="top-header">
@@ -54,7 +57,7 @@
                     <div class="d-flex justify-content-end">
                         <img src="./assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
@@ -70,7 +73,8 @@
                             <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات مدرسه</a>
+                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات
+                                مدرسه</a>
                             <ul class="dropdown-menu main-menu-sub-menu">
                                 <li>
                                     <a class="dropdown-item" href="#">نمازخانه</a>
@@ -108,7 +112,50 @@
     </header>
     <!-- End of menu -->
 
+
+    <!-- image slider -->
+    <div class="container">
+        <div style="width: 100%; margin: auto">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://placeholder.com"><img src="https://via.placeholder.com/1100x250" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://placeholder.com"><img src="https://via.placeholder.com/1100x250" alt=""></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://placeholder.com"><img src="https://via.placeholder.com/1100x250" alt=""></a>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="https://placeholder.com"><img src="https://via.placeholder.com/300/09f/fff.png" alt=""></a> -->
+    <!-- end of image slider -->
+
+
+
+
+
+
     <!-- JavaScript File -->
     <script src="./js/all.js"></script>
 </body>
+
 </html>
