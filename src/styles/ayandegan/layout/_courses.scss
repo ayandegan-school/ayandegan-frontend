@@ -1,0 +1,44 @@
+#courses {
+    padding-top: 50px;
+    background: url('../assets/images/process-background-line.png') no-repeat center center, #f9f9f9;
+    .course {
+        box-shadow: 0 0 30px #cccccc73;
+        transition: all .3s;
+        color: #000 !important;
+        &:hover {
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.18);
+            transform: translateY(-1px);
+        }
+    }
+
+    .course-body {
+        position: relative;
+    }
+
+    .course-card-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: 5px solid #f9ce00;
+        position: absolute;
+        top: -50px;
+        right: 50%;
+        margin-right: -50px;
+        img {
+            width: 60px;
+        }
+    }
+
+
+    .course-card-title {
+        padding-top: 45px;
+
+        h2 {
+            font-size: 26px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+a {
+    text-decoration: none !important;
+}
+
+.main-title {
+    color: #1A2930;
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 45px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: -7px;
+        width: 6px;
+        height: 50px;
+        display: block;
+        background-color: #F9CE00;
+    }
+}
