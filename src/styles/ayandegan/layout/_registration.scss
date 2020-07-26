@@ -1,0 +1,50 @@
+#registration {
+    padding: 50px 0px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url('../assets/images/3159557.jpg') center center/ cover;
+    background-attachment: fixed;
+    color: #fff !important;
+
+
+    .coutdown-registration .title {
+        font-size: 17px;
+    }
+
+    .count > p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #F9CE00;
+    }
+    .count li {
+
+        margin-right: 20px;
+        display: inline-block;
+        text-align: center;
+        &:first-child {
+            margin-right: 0;
+        }
+        p {
+            display: block;
+            width: 85px;
+            height: 85px;
+            border: 3px solid #fff;
+            border-radius: .25em;
+            font-size: 30px;
+            line-height: 85px;
+            text-align: center;
+        }
+    }
+
+    .registration-btn {
+        text-align: center;
+        button {
+            background-color: #F9CE00;
+            border-radius: 0;
+            padding: 8px 45px;
+            border-radius: .25em;
+            transition: all .3s;
+            &:hover {
+                background-color: darken($color: #F9CE00, $amount: 3%);
+            }
+        }
+    }
+}

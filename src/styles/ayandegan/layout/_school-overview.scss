@@ -1,0 +1,123 @@
+#school-overview {
+    padding: 50px 0px;
+    background-color: #f1f1f1;
+    position: relative;
+
+    .overview-icon {
+        position: absolute;
+        &:nth-child(4) {
+            top: 70px;
+            right: 70px;
+
+            animation: animationFramesOne 10s infinite linear;
+        }
+        &:nth-child(1) {
+            top: 70px;
+            left: 70px;
+
+            animation: loop 5s infinite linear;
+        }
+        &:nth-child(2) {
+            top: 70%;
+            left: 150px;
+
+            animation: rotate 2s infinite;
+        }
+
+        &:nth-child(3) {
+            top: 70%;
+            right: 250px;
+
+            animation: rotate 10s infinite linear;
+        }
+        img {
+            width: 50px;
+        }
+    }
+
+
+    .overview {
+        background-color: #f9ce00;
+
+        .title {
+            font-size: 25px;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+        i {
+            color: #007849;
+        }
+    }
+
+    .overview.dark {
+        background-color: desaturate($color: #f9ce00, $amount: 15%);
+    }
+    .overview.light {
+        background-color: lighten($color: #f9ce00, $amount: 15%);
+
+    }
+}
+
+
+@keyframes loop {
+    0% {
+        top: 70px;
+        left: 70px;
+
+        transform: rotate(0);
+    }
+
+    25% {
+        top: 150px;
+        left: 150px;
+
+    }
+
+    75% {
+        top: 20px;
+        left: 250px;
+    }
+
+    100% {
+        top: 70px;
+        left: 70px;
+
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animationFramesOne {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+        transform: translate(100px, 72px) rotate(72deg);
+    }
+    60% {
+        transform: translate(83px, 100px) rotate(108deg);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
