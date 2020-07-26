@@ -256,7 +256,7 @@
                                         <span>دقیقه</span>
                                     </li>
                                     <li>
-                                        <p>12</p>
+                                        <p id="second">59</p>
                                         <span>ثانیه</span>
                                     </li>
                                 </ul>
@@ -288,8 +288,8 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 p-0 overview dark">
-                    <div class="p-4">
+                <div class="col-md-4 overview dark">
+                    <div class="py-4 px-2">
                         <h2 class="title text-center">اهداف آموزشی</h2>
                         <ul class="list-unstyled">
                             <li>
@@ -319,8 +319,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 p-0 overview">
-                    <div class="p-4">
+                <div class="col-md-4 overview">
+                    <div class="py-4 px-2">
                         <h2 class="title text-center">اهداف پرورشی</h2>
                         <ul class="list-unstyled">
                             <li>
@@ -350,8 +350,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 p-0 overview light">
-                    <div class="p-4">
+                <div class="col-md-4 overview light">
+                    <div class="py-4 px-2">
                         <h2 class="title text-center">امکانات مدرسه</h2>
                         <ul class="list-unstyled">
                             <li>
@@ -377,97 +377,130 @@
         </div>
     </section>
     <!-- End of school overview -->
-    <section id="courses">
+    
+    <!-- Lastes news -->
+    <section id="news">
+        <div class="slider-controller">
+            <div class="prev">
+                <i class="las la-chevron-left la-3x"></i>
+            </div>
+            <div class="next">
+                <i class="las la-chevron-right la-3x"></i>
+            </div>
+        </div>
         <div class="container">
-            <div class="row" style="margin-top: 10px;">
+            <div class="row">
                 <div class="col-12">
                     <h1 class="text-center">
-                        <span class="main-title text-black mb-4">اخبار و تازه ها</span>
+                        <span class="main-title mb-4">آخرین خبرها</span>
                     </h1>
                 </div>
-                <div class="col-md-4">
-                    <div class="owl-carousel">
-                        <div class="post-slide" style="background-color: rgb(236, 235, 220); height: 500px;">
-                            <ul class="post-bar">
-                                <li style="margin-top: 10px;"><a href="#" class="px-3" title="calendar"> <i
-                                            class="la la-calendar la-lg"></i>
-                                    </a>4 مرداد 1399</li>
-                                <li><a href="#" class="px-3" title="user"> <i class="la la-user la-lg"></i>
-                                    </a>admin</li>
-                            </ul>
-                            <div class="post-img">
-                                <a href="#"><img src="https://via.placeholder.com/350x150" alt=""></a>
-                            </div>
-                            <div class="post-content" style="padding: 20px;">
-                                <h5 class="post-title"><a href="#" style="color: rgb(0, 0, 0);">اسامي نفرات برتر
-                                        مسابقات فرهنگي و هنري</a>
-                                </h5>
-                                <p class="post-description">
-                                    كسب بيشترين آمار قبولي در مسابقات فرهنگي و هنري توسط دانش آموزان خوش ذوق و
-                                    هنرمند دبستان آیندگان , با سپاس فراوان از زحمات بي دريغ معلمان دلسوز و هنرمند
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="news-item d-flex flex-column">
+                        <div class="news-info">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">منتشر شده توسط <a href="#">admin</a></p>
+                                <p class="m-0">
+                                    <img src="./assets/images/calendar.svg" alt="">
+                                    <span>5 مرداد 1399</span>
                                 </p>
-                                <a href="#">
-                                    <button type="button" class="btn mr-3 read-more btn-dark">ادامه مطلب</button>
-                                </a>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="owl-carousel">
-                        <div class="post-slide" style="background-color: rgb(236, 235, 220); height: 500px;">
-                            <ul class="post-bar">
-                                <li style="margin-top: 10px;"><a href="#" class="px-3" title="calendar"> <i
-                                            class="la la-calendar la-lg"></i>
-                                    </a>4 مرداد 1399</li>
-                                <li><a href="#" class="px-3" title="user"> <i class="la la-user la-lg"></i>
-                                    </a>admin</li>
-                            </ul>
-                            <div class="post-img">
-                                <a href="#"><img src="https://via.placeholder.com/350x150" alt=""></a>
-                            </div>
-                            <div class="post-content " style="padding: 20px;">
-                                <h5 class="post-title"><a href="#" style="color: rgb(0, 0, 0);">انتخابات شوراي دانش
-                                        آموزي</a>
-                                </h5>
-                                <p class="post-description">
-                                    انتخابات شوراي دانش آموزي مدرسه راهنمايي با حضور دانش آموزان برگزار گرديد.
-                                </p>
-                                <a href="#">
-                                    <button type="button" class="btn mr-3 read-more btn-dark ">ادامه مطلب</button>
-                                </a>
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/250x250" alt="">
+                        </div>
+                        <div class="news-body">
+                            <h3>اسامی نفرات برتر مسابقات فرهنگی و هنری</h3>
+                            <p>
+                                کسب بیشترین آمار قبولی در مسابقات فرهنگی و هنری توسط دانش آموزان خوش ذوق و هنرمند دبستان آیندگان در کنار زحمات فراوان و بی دریغ معلمان دلسوز و هنرمند
+                            </p>
+                        </div>
+                        <div class="news-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rate">
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star"></i>
+                                </div>
+                                <div class="read-more">
+                                    <button type="button" class="btn">خبر کامل</button>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="owl-carousel">
-                        <div class="post-slide" style="background-color: rgb(236, 235, 220); height: 500px; ">
-                            <ul class="post-bar">
-                                <li style="margin-top: 10px;"><a href="#" class="px-3" title="calendar"> <i
-                                            class="la la-calendar la-lg"></i>
-                                    </a>4 مرداد 1399</li>
-                                <li><a href="#" class="px-3" title="user"> <i class="la la-user la-lg"></i>
-                                    </a>admin</li>
-                            </ul>
-
-                            <div class="post-img">
-                                <a href="#"><img src="https://via.placeholder.com/350x150" alt=""></a>
-                            </div>
-                            <div class="post-content" style="padding: 30px;">
-                                <h5 class="post-title"><a href="#" style="color: rgb(0, 0, 0);">جلسه انجمن اولیا</a>
-                                </h5>
-                                <p class="post-description">
-                                    دعوت نامه حضور در جلسه اولیا و مربیان مدرسه
-                                    خواهشمند است با عنایتی که نسبت به سعادت و خوشبختی فرزند دلبندتان دارید،ضمن حضور
-                                    به موقع و مشارکت فعال در این جلسه ما ار از نظر و پیشنهاد های مفید خود بهره مند
-                                    سازید.
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="news-item d-flex flex-column">
+                        <div class="news-info">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">منتشر شده توسط <a href="#">admin</a></p>
+                                <p class="m-0">
+                                    <img src="./assets/images/calendar.svg" alt="">
+                                    <span>18 تیر 1399</span>
                                 </p>
-                                <a href="#">
-                                    <button type="button" class="btn mr-3 read-more btn-dark">ادامه مطلب</button>
-                                </a>
+                            </div>
+                        </div>
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/250x250" alt="">
+                        </div>
+                        <div class="news-body">
+                            <h3>انتخابات شورای دانش آموزی</h3>
+                            <p>
+                                انتخابات شورای دانش آموزی مدرسه راهنمایی با حضور دانش آموزان برگزار گردید.
+                            </p>
+                        </div>
+                        <div class="news-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rate">
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </div>
+                                <div class="read-more">
+                                    <button type="button" class="btn">خبر کامل</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="news-item d-flex flex-column">
+                        <div class="news-info">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">منتشر شده توسط <a href="#">admin</a></p>
+                                <p class="m-0">
+                                    <img src="./assets/images/calendar.svg" alt="">
+                                    <span>10 مرداد 1399</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/250x250" alt="">
+                        </div>
+                        <div class="news-body">
+                            <h3>جلسه انجمن اولیا</h3>
+                            <p>
+                                دعوت نامه حضور در جلسه اولیا و مربیان مدرسه | خواهشمند است باعنایتی که نسبت به سعادت و خوشبختی فرزند دلبندتان دارید، ضمن حضور به موقع و مشارکت فعال در این جلسه، ما را از نظرات و پیشنهادات خود بهره مند سازید.
+                            </p>
+                        </div>
+                        <div class="news-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rate">
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                    <i class="las la-star active"></i>
+                                </div>
+                                <div class="read-more">
+                                    <button type="button" class="btn">خبر کامل</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -475,9 +508,7 @@
             </div>
         </div>
     </section>
-    <!-- end of news section -->
-
-
+    <!-- End of latest news -->
     <!-- JavaScript File -->
     <script src="./js/all.js"></script>
 </body>

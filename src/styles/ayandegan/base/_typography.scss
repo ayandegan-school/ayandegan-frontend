@@ -19,3 +19,10 @@ a {
         background-color: #F9CE00;
     }
 }
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+}
