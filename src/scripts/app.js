@@ -6,3 +6,4 @@ $(document).ready(function() {
         seocnd = (seocnd == 0) ? 60 : seocnd;
     }, 1000);
 });
+
