@@ -5,8 +5,8 @@
     position: relative;
 }
 .our-team .pic img{
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
 }
 .social_media_team{
@@ -17,13 +17,14 @@
     visibility: hidden;
     position: absolute;
     top:0;
-    left:0;
-    width: 100%;
+    left:25%;
+    width: 50%;
     height: 100%;
     text-align: center;
 }
 .our-team:hover .social_media_team{
-    transform: scale(1);
+    
+    transform:scale(1,1);
     visibility: visible;
 }
 .team_social{
