@@ -55,9 +55,11 @@
 
     .overview.dark {
         background-color: desaturate($color: #f9ce00, $amount: 15%);
+        
     }
     .overview.light {
         background-color: lighten($color: #f9ce00, $amount: 15%);
+        
 
     }
 }
