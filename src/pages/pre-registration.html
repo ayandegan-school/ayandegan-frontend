@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel='icon' href='../assets/images/favicon.ico' type='image/x-icon'>
+    <title>ثبت نام</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Lineawsome Icons -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <!-- Top header / not fully responsive -->
+    <section id="top-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="top-header-hadith">
+                    <p class="mb-0">امام سجاد (علیه السلام) : برای هر چیزی میوه ای است و میوه شنوایی، کلام نیکوست.</p>
+                </div>
+                <div class="top-header-social-medias">
+                    <ul class="list-unstyled mb-0 d-flex">
+                        <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i> </a></li>
+                        <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i> </a></li>
+                        <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a></li>
+                    </ul>
+                </div>
+
+                <!-- login -->
+                <div class="top-header-login">
+                    <a href="#">
+                        <button type="button" class="btn mr-3"
+                            onclick="document.getElementById('id01').style.display='block'">ورود به سامانه</button>
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate " method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="خروج">&times;</span>
+                                </div>
+                                <div class="containermodal" style="text-align: center;">
+                                    <label for="uname"><b>نام کاربری</b></label>
+                                    <input type="text" placeholder="وارد کردن نام کاربری" name="uname" required>
+
+                                    <label for="psw"><b>کلمه عبور </b></label>
+                                    <input type="password" placeholder="وارد کردن کلمه عبور" name="psw" required>
+
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> مرا به خاطر بسپار
+                                    </label><br>
+                                    <button type="submit" class="bttn"
+                                        style="background-color: rgb(37, 145, 253);">ورود</button>
+                                </div>
+                                <div class="container" style="background-color:#ffffff; ">
+                                    <span class="psw"> <a href="#">کلمه عبور خود را فراموش کرده اید؟</a></span>
+                                </div><br>
+                                <div class="container" style="background-color:#ffffff; ">
+                                    <span class="psw1"> <a href="#"> ثبت نام کنید</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </a>
+                </div>
+                <!-- End of login -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End of top header -->
+
+    <!-- Branding -->
+    <section id="branding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <img src="../assets/images/450x150.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <img src="../assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of branding -->
+
+    <!-- Menu -->
+    <header id="main-menu">
+        <nav class="navbar navbar-expand-md py-1">
+            <div class="container">
+                <div>
+                    <ul class="navbar-nav pr-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات
+                                مدرسه</a>
+                            <ul class="dropdown-menu main-menu-sub-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">نمازخانه</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">آزمایشگاه</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">سایت کامپیوتر</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">کتابخانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">اخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">مقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of menu -->
+
+    <!-- form -->
+
+    <main class="my-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">مشخصات</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+
+                                <!-- Specifications -->
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">نام</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name"
+                                            placeholder="نام خود را وارد کنید">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">نام
+                                        خانوادگی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name"
+                                            placeholder="نام خانوادگی خود را وارد کنید">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                        ملی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="National-code" class="form-control col-md-10"
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="id" class="col-md-4 col-form-label text-md-right">شماره شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="id" class="form-control" name="id"
+                                            placeholder="شماره شناسنامه خود را وارد کنید">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="place" class="col-md-4 col-form-label text-md-right">محل صدور
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="place" class="form-control" name="place"
+                                            placeholder="محل صدور شناسنامه را وارد کنید">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سریال
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="serial" class="form-control " name="serial"
+                                            placeholder="سریال شناسنامه خود را وارد کنید">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="Grade" class="col-md-4 col-form-label text-md-right">خواهان ثبت
+                                        نام در مقطع</label>
+                                    <select name="Grade" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="pish">پیش دبستان</option>
+                                        <option value="1">پایه اول</option>
+                                        <option value="2">پایه دوم</option>
+                                        <option value="3">پایه سوم</option>
+                                        <option value="4">پایه چهارم</option>
+                                        <option value="5">پایه پنجم</option>
+                                        <option value="6">پایه ششم</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="religion" class="col-md-4 col-form-label text-md-right">دین و
+                                        مذهب</label>
+                                    <select name="religione" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="pish">اسلام-تشیع</option>
+                                        <option value="1">اسلان-تسنن</option>
+                                        <option value="2">مسیحی</option>
+                                        <option value="3">کلیمی</option>
+                                        <option value="4">زرتشتی</option>
+                                        <option value="5">سایر</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label for="Birthday" class="col-md-4 col-form-label text-md-right">تاریخ
+                                        تولد</label>
+                                    <div class="col-md-6">
+                                        <input type="date" id="Birthday" class="form-control col-md-8">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="photo" class="col-md-4 col-form-label text-md-right">انتخاب تصویر
+                                        پرسنلی</label>
+                                    <div class="col-md-4">
+                                        <input type="file" id="photo" class="form-control" name="photo">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Of Specifications -->
+
+                    <!-- Current School -->
+                    <div class="card">
+                        <div class="card-header">مدرسه فعلی</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+                                <div class="form-group row">
+                                    <label for="school" class="col-md-4 col-form-label text-md-right">نوع</label>
+                                    <select name="school" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="pish">دولتی</option>
+                                        <option value="1">غیر دولتی</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Of Current School -->
+
+                    <!-- Scores -->
+                    <div class="card">
+                        <div class="card-header">نمرات</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+                                <div class="form-group row">
+                                    <label for="grades" class="col-md-4 col-form-label text-md-right">معدل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="grades" class="form-control" name="place">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="grades" class="col-md-4 col-form-label text-md-right">انضباط</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="grades" class="form-control" name="place">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="grades" class="col-md-4 col-form-label text-md-right">ریاضی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="grades" class="form-control" name="place">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--End of Scores -->
+
+
+
+                    <!-- Father Profile -->
+                    <div class="card">
+                        <div class="card-header">مشخصات پدر</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ تولد</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="birth" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                        ملی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="National-code" class="form-control col-md-10"
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="education" class="col-md-4 col-form-label text-md-right">تحصیلات</label>
+                                    <select name="education" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="pish">سیکل</option>
+                                        <option value="1">دیپلم</option>
+                                        <option value="2">فوق دیپلم</option>
+                                        <option value="3">لیسانس</option>
+                                        <option value="4">فوق لیسانس</option>
+                                        <option value="5">دکترا</option>
+                                        <option value="6">فوق دکترا</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Grade" class="col-md-4 col-form-label text-md-right">سابقه عضویت در
+                                        انجمن اولیا</label>
+                                    <select name="Grade" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="0">سابقه نداشته</option>
+                                        <option value="1">یک سال</option>
+                                        <option value="2">دوسال</option>
+                                        <option value="3">سه سال</option>
+                                        <option value="4">چهار سال</option>
+                                        <option value="5">پنج سال</option>
+                                        <option value="6">شش سال</option>
+                                        <option value="7">هفت سال</option>
+                                        <option value="8">هشت سال</option>
+                                        <option value="9">نه سال</option>
+                                        <option value="10">ده سال</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="job" class="col-md-4 col-form-label text-md-right">شغل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="job" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل کار</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="tel" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
+                                        همراه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="mobile" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">ایمیل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Of Father Profile -->
+
+
+                    <!-- Mother profile -->
+                    <div class="card">
+                        <div class="card-header">مشخصات مادر</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام خانوادگی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ تولد</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="birth" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                        ملی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="National-code" class="form-control col-md-10"
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="education" class="col-md-4 col-form-label text-md-right">تحصیلات</label>
+                                    <select name="education" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="pish">سیکل</option>
+                                        <option value="1">دیپلم</option>
+                                        <option value="2">فوق دیپلم</option>
+                                        <option value="3">لیسانس</option>
+                                        <option value="4">فوق لیسانس</option>
+                                        <option value="5">دکترا</option>
+                                        <option value="6">فوق دکترا</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="Grade" class="col-md-4 col-form-label text-md-right">سابقه عضویت در
+                                        انجمن اولیا</label>
+                                    <select name="Grade" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="0">سابقه نداشته</option>
+                                        <option value="1">یک سال</option>
+                                        <option value="2">دوسال</option>
+                                        <option value="3">سه سال</option>
+                                        <option value="4">چهار سال</option>
+                                        <option value="5">پنج سال</option>
+                                        <option value="6">شش سال</option>
+                                        <option value="7">هفت سال</option>
+                                        <option value="8">هشت سال</option>
+                                        <option value="9">نه سال</option>
+                                        <option value="10">ده سال</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="job" class="col-md-4 col-form-label text-md-right">شغل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="job" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل کار</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="tel" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
+                                        همراه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="mobile" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="col-md-4 col-form-label text-md-right">ایمیل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email" class="form-control " name="serial">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Of Mother Profile -->
+
+                    <!-- family -->
+                    <div class="card">
+                        <div class="card-header">خانواده</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+
+                                <div class="form-group row">
+                                    <label for="family" class="col-md-4 col-form-label text-md-right">وضعیت مسکن
+                                        خانواده</label>
+                                    <select name="family" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="0">اجاره</option>
+                                        <option value="1">شخصی</option>
+                                        <option value="2">رهنی</option>
+                                        <option value="3">سازمانی</option>
+                                        <option value="4">هیچکدام</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="family1" class="col-md-4 col-form-label text-md-right">وضعیت
+                                        خانواده</label>
+                                    <select name="family1" class="col-md-4 form-control">
+                                        <option selected>انتخاب کنید</option>
+                                        <option value="0">شهدا</option>
+                                        <option value="1">جاویدالاثر</option>
+                                        <option value="2">جانباز</option>
+                                        <option value="3">آزاده</option>
+                                        <option value="4">فرهنگی</option>
+                                        <option value="5">هیچکدام</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="address" class="col-md-4 col-form-label text-md-right">آدرس منزل</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="address" class="form-control " name="address">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="postcode" class="col-md-4 col-form-label text-md-right">کدپستی</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="postcode" class="form-control " name="postcode">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
+                                        تلفن</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="mobile" class="form-control " name="mobile">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End of family -->
+
+
+                    <!-- Other Information -->
+                    <div class="card">
+                        <div class="card-header">دیگر اطلاعات</div>
+                        <div class="card-body">
+                            <form name="my-form" method="">
+                                <div class="form-group row">
+                                    <label for="grades" class="col-md-4 col-form-label text-md-right">توضیحات
+                                        بیشتر</label>
+                                    <div class="col-md-6">
+                                        <textarea type="" id="grades" class="form-control" name=""></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><br><br>
+                    <!-- End Of Other Information -->
+
+
+                    <!-- Send -->
+                    <input type="checkbox" id="opt" name="opt" value="Optimization">
+                    <label for="opt"> تایید می شود که تمامی اطلاعات وارد شده صحیح می باشد</label><br><br>
+                    <div class="col-md-6 offset-md-4">
+                        <button type="submit" class="btn btn-primary">
+                            ثبت نام
+                        </button>
+                        <button type="reset" class="btn btn-danger">
+                            پاک کردن اطلاعات
+                        </button>
+                    </div>
+                    <!-- End Of Send -->
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- End Of form -->
+
+        <!-- JavaScript File -->
+        <script src="./js/all.js"></script>
+</body>
+
+</html>
