@@ -1,0 +1,149 @@
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.tab{
+    padding: 70px 50px 25px;
+    margin: 80px auto;
+    background: #2e3137;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    position: relative;
+}
+// .tab:before{
+//     content: "\f007";
+//     font-family: "Font Awesome 5 Free";
+//     font-weight: 900;
+//     width: 100px;
+//     height: 100px;
+//     line-height: 100px;
+//     border-radius: 50%;
+//     border: 2px solid #fff;
+//     background: #585a5f;
+//     font-size: 40px;
+//     color: #fff;
+//     text-align: center;
+//     margin: 0 auto;
+//     position: absolute;
+//     top: -50px;
+//     left: 0;
+//     right: 0;
+// }
+.tab .nav-tabs{
+    padding: 0 20px 15px;
+    position: relative;
+}
+.tab .nav-tabs li a{
+    padding: 0 20px 0;
+    margin: 0;
+    background: none;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    opacity: 0.5;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.tab .nav-tabs li a:hover{
+     border: none; 
+}
+.tab .nav-tabs li a:before{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:focus,
+.tab .nav-tabs li.active a:hover{
+    border: none;
+    background: none;
+    opacity: 1;
+    color: #fff;
+}
+.tab .nav-tabs li.active a:before,
+.tab .nav-tabs li.active a:hover:before{ width: 100%; }
+.tab .tab-content{
+    padding: 20px 0 0 0;
+    margin-top: 15px;
+    background: none;
+    // position: relative;
+}
+.form-horizontal .form-group{
+    margin: 0 0 15px 0;
+    position: relative;
+    margin-top: 40px;
+}
+.form-horizontal .form-control{
+    height: 40px;
+    background: rgba(19, 10, 10, 0.2);
+    border: none;
+    border-radius:7px;
+    box-shadow: none;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+}
+.form-horizontal .form-group label{
+    padding: 0 10px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    width: 300px;
+}
+.form-horizontal .btn{
+    display: inline-block;
+    width: 50%;
+    background: #04c582;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: uppercase;
+}
+.form-horizontal .btn:focus{
+    background: #04c582;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+.form-horizontal .forgot-pass{
+    margin: 0;
+    text-align: center;
+}
+.form-horizontal .forgot-pass a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0 0 0;
+    border-bottom: 1px solid #615f6c;
+    font-size: 14px;
+    font-weight: bold;
+    color: #615f6c;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+.form-horizontal .forgot-pass a:hover{ 
+    color: #04c582;
+ }
+@media only screen and (max-width: 479px){
+    .tab{ padding: 70px 20px 20px; }
+}
+@media only screen and (max-width: 360px){
+
+    .tab .nav-tabs li a{ padding: 0 15px;
+     }
+}

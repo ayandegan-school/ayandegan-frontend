@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta tags for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel='icon' href='../assets/images/favicon.ico' type='image/x-icon'>
+    <title>ثبت نام</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Lineawsome Icons -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+    <!-- Top header / not fully responsive -->
+    <section id="top-header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="top-header-hadith">
+                    <p class="mb-0">امام سجاد (علیه السلام) : برای هر چیزی میوه ای است و میوه شنوایی، کلام نیکوست.</p>
+                </div>
+                <div class="top-header-social-medias">
+                    <ul class="list-unstyled mb-0 d-flex">
+                        <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i> </a></li>
+                        <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i> </a></li>
+                        <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a></li>
+                    </ul>
+                </div>
+
+                <!-- login -->
+                <div class="top-header-login">
+                    <a href="#">
+                        <button type="button" class="btn mr-3"
+                            onclick="document.getElementById('id01').style.display='block'">ورود به سامانه</button>
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate " method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="خروج">&times;</span>
+                                </div>
+                                <div class="containermodal" style="text-align: center;">
+                                    <label for="uname"><b>نام کاربری</b></label>
+                                    <input type="text" placeholder="وارد کردن نام کاربری" name="uname" required>
+
+                                    <label for="psw"><b>کلمه عبور </b></label>
+                                    <input type="password" placeholder="وارد کردن کلمه عبور" name="psw" required>
+
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> مرا به خاطر بسپار
+                                    </label><br>
+                                    <button type="submit" class="bttn"
+                                        style="background-color: rgb(37, 145, 253);">ورود</button>
+                                </div>
+                                <div class="container" style="background-color:#ffffff; ">
+                                    <span class="psw"> <a href="#">کلمه عبور خود را فراموش کرده اید؟</a></span>
+                                </div><br>
+                                <div class="container" style="background-color:#ffffff; ">
+                                    <span class="psw1"> <a href="#"> ثبت نام کنید</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </a>
+                </div>
+                <!-- End of login -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End of top header -->
+
+    <!-- Branding -->
+    <section id="branding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <img src="../assets/images/450x150.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <img src="../assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of branding -->
+
+    <!-- Menu -->
+    <header id="main-menu">
+        <nav class="navbar navbar-expand-md py-1">
+            <div class="container">
+                <div>
+                    <ul class="navbar-nav pr-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات
+                                مدرسه</a>
+                            <ul class="dropdown-menu main-menu-sub-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">نمازخانه</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">آزمایشگاه</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">سایت کامپیوتر</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">کتابخانه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">اخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">مقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="./pages/membership.html">ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light mx-2" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End of menu -->
+
+    <!-- Membership -->
+    <div class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab" role="tabpanel">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab"
+                                    data-toggle="tab">ثبت نام</a></li>
+                            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab"
+                                    data-toggle="tab">ورود</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div role="tabpanel" class="tab-pane active" id="Section1">
+                            <form class="form-horizontal col-md-12">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">نام کاربری ( کدملی  )</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">ایمیل</label>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">کلمه عبور</label>
+                                    <input class="form-control" type="password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">تکرار کلمه عبور</label>
+                                    <input class="form-control" type="password">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-default">ثبت نام</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-content tabs">
+                            <div role="tabpanel" class="tab-pane" id="Section2">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">ایمیل</label>
+                                        <input class="form-control" id="exampleInputEmail1" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">کلمه عبور</label>
+                                        <input class="form-control" id="exampleInputPassword1" type="password">
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn btn-default">ورود</button>
+                                    </div>
+                                    <div class="form-group forgot-pass">
+                                        <a href="#">فراموشی کلمه عبور؟</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Of Tab panes -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Of Membership -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript File -->
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
