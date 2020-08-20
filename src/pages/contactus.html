@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel='icon' href='../assets/images/favicon.ico' type='image/x-icon'>
-    <title>ثبت نام</title>
+    <title>تماس با ما</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Lineawsome Icons -->
@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #1A2930;">
     <!-- Top header / not fully responsive -->
     <section id="top-header">
         <div class="container">
@@ -143,71 +143,86 @@
     </header>
     <!-- End of menu -->
 
-    <!-- Membership -->
-    <div class="form-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tab" role="tabpanel">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab"
-                                    data-toggle="tab">ثبت نام</a></li>
-                            <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab"
-                                    data-toggle="tab">ورود</a></li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div role="tabpanel" class="tab-pane active" id="Section1">
-                            <form class="form-horizontal col-md-12">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">نام کاربری ( کدملی  )</label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">ایمیل</label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">کلمه عبور</label>
-                                    <input class="form-control" type="password">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">تکرار کلمه عبور</label>
-                                    <input class="form-control" type="password">
-                                </div>
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn btn-default">ثبت نام</button>
-                                </div>
-                            </form>
+    <!-- ContactUS -->
+    <div class="container contact">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://img.icons8.com/nolan/100/email-open.png" />
+                    <h2>تماس با ما</h2>
+                    <h5>خوشحال می شویم با ما در ارتباط باشید</h5>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="fname">نام :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                                name="fname">
                         </div>
-                        <div class="tab-content tabs">
-                            <div role="tabpanel" class="tab-pane" id="Section2">
-                                <form class="form-horizontal">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">ایمیل</label>
-                                        <input class="form-control" id="exampleInputEmail1" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="lname">نام خانوادگی :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                name="lname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="email">ایمیل :</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="comment">پیغام شما :</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">ارسال</button>
+                        </div>
+                    </div>
+
+                    <div class="container" style="color: black;">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+                                <div class="card border-0">
+                                    <div class="card-body text-center">
+                                        <i class="la la-phone la-5x mb-3" aria-hidden="true"></i>
+                                        <h4 class="text-uppercase mb-5">تلفن ما</h4>
+                                        <p>06633322900 09356176375</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">کلمه عبور</label>
-                                        <input class="form-control" id="exampleInputPassword1" type="password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+                                <div class="card border-0">
+                                    <div class="card-body text-center">
+                                        <i class="la la-map-marker la-5x mb-3" aria-hidden="true"></i>
+                                        <h4 class="text-uppercase mb-5">آدرس</h4>
+                                        <address>خیابان انقلاب کوچه هفتم آراسته</address>
                                     </div>
-                                    <div class="form-group text-center">
-                                        <button type="submit" class="btn btn-default">ورود</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4 my-5">
+                                <div class="card border-0">
+                                    <div class="card-body text-center">
+                                        <i class="la la-globe la-5x mb-3" aria-hidden="true"></i>
+                                        <h4 class="text-uppercase mb-5">ایمیل</h4>
+                                        <p>ayandegan@gmail.com</p>
                                     </div>
-                                    <div class="form-group forgot-pass">
-                                        <a href="#">فراموشی کلمه عبور؟</a>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                        <!-- End Of Tab panes -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Of Membership -->
-
+    <!-- End Of ContactUS -->
 
 
 
