@@ -1,119 +1,265 @@
-.main-timeline{
-    padding: 30px 0;
-}
-.main-timeline:after{
-    content: '';
-    display: block;
-    clear: both;
-}
-.main-timeline:before{
-    content: '';
-    background-color: rgb(23, 7, 168);
-    height: 100%;
-    width: 5px;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-.main-timeline .timeline{
-    width: 50%;
-    padding: 0 100px 0 0;
-    margin: 0 10px 20px 0;
-    float: left;
-    position: relative;
-    z-index: 1;
+// .main-timeline{
+//     padding: 30px 0;
+// }
+// .main-timeline:after{
+//     content: '';
+//     display: block;
+//     clear: both;
+// }
+// .main-timeline:before{
+//     content: '';
+//     background-color: rgb(23, 7, 168);
+//     height: 100%;
+//     width: 5px;
+//     transform: translateX(-50%);
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+// }
+// .main-timeline .timeline{
+//     width: 50%;
+//     padding: 0 100px 0 0;
+//     margin: 0 10px 20px 0;
+//     float: left;
+//     position: relative;
+//     z-index: 1;
     
-}
-.main-timeline .timeline:before{
-    content: '';
-    background-color: #08c5ff;
-    height: 5px;
-    width: 80px;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    z-index: -1;
-}
-.main-timeline .timeline-content{
-    color: rgb(0, 0, 0);
-    background-color: #08c5ff;
-    text-align: center;
-    padding: 0 0 10px;
-    border-radius: 20px;
-    display: block;
+// }
+// .main-timeline .timeline:before{
+//     content: '';
+//     background-color: #08c5ff;
+//     height: 5px;
+//     width: 80px;
+//     position: absolute;
+//     right: 50px;
+//     top: 50px;
+//     z-index: -1;
+// }
+// .main-timeline .timeline-content{
+//     color: rgb(0, 0, 0);
+//     background-color: #08c5ff;
+//     text-align: center;
+//     padding: 0 0 10px;
+//     border-radius: 20px;
+//     display: block;
     
+// }
+
+// .main-timeline .timeline-circle{
+//     color: #121365;
+//     background: linear-gradient(to right,#059b9b,#0ae7e7);
+//     font-size: 35px;
+//     font-weight: 600;
+//     text-align: center;
+//     line-height: 100px;
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 50%;
+//     position: absolute;
+//     right: -50px;
+//     top: 0;
+//     z-index: 1;
+// }
+// .main-timeline .timeline-circle:before{
+//     content: '';
+//     background-color: rgb(255, 255, 255);
+//     height: 80%;
+//     width: 80%;
+//     border-radius: 50%;
+//     transform: translateX(-50%) translateY(-50%);
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     z-index: -1;
+// }
+// .main-timeline .timeline-icon{
+//     color: #121365;
+//     font-size: 35px;
+// }
+// .main-timeline .title{
+//     color: rgb(0, 0, 0);
+//     background: linear-gradient(to right,#059b9b,#0ae7e7);
+//     font-size: 20px;
+//     font-weight: 700;
+//     letter-spacing: 1px;
+//     text-transform: uppercase;
+//     padding: 10px;
+//     margin: 0 0 10px;
+//     border-radius: 20px 20px 0 0;
+// }
+// .main-timeline .text{
+//     font-size:15px;
+//     letter-spacing: 1px;
+//     margin: 0 15px;
+// }
+// .main-timeline .timeline:nth-child(even){
+//     padding: 0 0 0 100px;
+//     margin: 0 0 20px 10px;
+//     float: right;
+// }
+// .main-timeline .timeline:nth-child(even):before{
+//     right: auto;
+//     left: 50px;
+//     background-color: #F9CE00;
+// }
+// .main-timeline .timeline:nth-child(even) .timeline-circle{
+//     right: auto;
+//     left: -50px;
+// }
+// .main-timeline .timeline:nth-child(even) .timeline-icon{
+//     right: auto;
+//     left: 20px;
+// }
+// .main-timeline .timeline:nth-child(even) .timeline-content{
+//     background-color: #F9CE00;
+// }
+// .main-timeline .timeline:nth-child(even) .timeline-circle,
+// .main-timeline .timeline:nth-child(even) .title{
+//     background: linear-gradient(to right,#b6ca03,#FBB508);
+// }
+
+#timeline {
+    padding: 50px 0px;
+    background: #f9f9f9;
+    a {
+        color: #111;
+    }
+
+    .timelines, .timeline-item {
+        position: relative;
+    }
+
+    .timelines {
+        padding: 2em 0;
+    }
+
+    .timeline-item {
+        margin: 2em 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        margin-bottom: 0;
+        .timeline-body {
+            float: none;
+            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            @media(min-width: 992px) {
+                float: left;
+            }
+            &:after {
+                right: -30px;
+                border-right-color: transparent;
+                border-left-color: #fe9a8b;
+
+            }
+
+        }
+    }
+
+    .timelines:before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 3px;
+        top: 0;
+        right: 30px;
+        bottom: 0;
+
+        background-color: #f9ce00 ;
+        @media(min-width: 992px) {
+            right: 50%;
+        }
+    }
+
+    .timelines:after, .timeline-item:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+    .timeline-icon {
+        position: absolute;
+        right: 0;
+        margin-right: -7px;
+        z-index: 1;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 3px solid #f9ce00;
+        @media(min-width: 992px) {
+            right: 50%;
+            margin-right: -36px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .timeline-body {
+        width: 80%;
+        padding: 20px;
+        margin-right: 90px;
+        background: linear-gradient(to right,#059b9b,#0ae7e7);
+        border-radius: 3px;
+
+        position: relative;
+
+        @media(min-width: 992px) {
+            width: 44%;
+            margin-right: 0px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 26px;
+            display: block;
+            width: 0;
+            height: 0;
+            right: -30px;
+            border: 15px solid transparent;
+            border-left-color: #0ae7e7;
+            @media(min-width: 992px) {
+                left: -30px;
+                border: 15px solid transparent;
+                border-right-color: #059b9b;
+                right: unset;
+                
+            }
+        }
+        h3 {
+            font-size: 22px !important;
+            font-weight: 400;
+            color: #444;
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+        p {
+            font-size: 16px !important;
+            color: #333;
+            line-height: 24px;
+        }
+    }
+
+
 }
 
-.main-timeline .timeline-circle{
-    color: #121365;
-    background: linear-gradient(to right,#059b9b,#0ae7e7);
-    font-size: 35px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 100px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    position: absolute;
-    right: -50px;
-    top: 0;
-    z-index: 1;
-}
-.main-timeline .timeline-circle:before{
-    content: '';
-    background-color: rgb(255, 255, 255);
-    height: 80%;
-    width: 80%;
-    border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: -1;
-}
-.main-timeline .timeline-icon{
-    color: #121365;
-    font-size: 35px;
-}
-.main-timeline .title{
-    color: rgb(0, 0, 0);
-    background: linear-gradient(to right,#059b9b,#0ae7e7);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 0 0 10px;
-    border-radius: 20px 20px 0 0;
-}
-.main-timeline .text{
-    font-size:15px;
-    letter-spacing: 1px;
-    margin: 0 15px;
-}
-.main-timeline .timeline:nth-child(even){
-    padding: 0 0 0 100px;
-    margin: 0 0 20px 10px;
-    float: right;
-}
-.main-timeline .timeline:nth-child(even):before{
-    right: auto;
-    left: 50px;
-    background-color: #F9CE00;
-}
-.main-timeline .timeline:nth-child(even) .timeline-circle{
-    right: auto;
-    left: -50px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-icon{
-    right: auto;
-    left: 20px;
-}
-.main-timeline .timeline:nth-child(even) .timeline-content{
-    background-color: #F9CE00;
-}
-.main-timeline .timeline:nth-child(even) .timeline-circle,
-.main-timeline .timeline:nth-child(even) .title{
-    background: linear-gradient(to right,#b6ca03,#FBB508);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

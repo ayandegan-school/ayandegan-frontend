@@ -21,73 +21,48 @@
 
 <body>
     <!-- Top header / not fully responsive -->
-    <section id="top-header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="top-header-hadith">
+    <header id="top-header">
+        <div class="container md-container">
+            <div class="row justify-content-between align-items-center">
+                <div class="top-header-hadith col-md-7 col-lg-8 py-2 py-md-0">
                     <p class="mb-0">امام سجاد (علیه السلام) : برای هر چیزی میوه ای است و میوه شنوایی، کلام نیکوست.</p>
                 </div>
-                <div class="top-header-social-medias">
-                    <ul class="list-unstyled mb-0 d-flex">
-                        <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i> </a></li>
-                        <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i> </a></li>
-                        <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a></li>
-                    </ul>
-                </div>
-
-                <!-- login -->
-                <div class="top-header-login">
-                    <a href="#">
-                        <button type="button" class="btn mr-3"
-                            onclick="document.getElementById('id01').style.display='block'">ورود به سامانه</button>
-                        <div id="id01" class="modal">
-                            <form class="modal-content animate " method="post">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                        title="خروج">&times;</span>
-                                </div>
-                                <div class="containermodal" style="text-align: center;">
-                                    <label for="uname"><b>نام کاربری</b></label>
-                                    <input type="text" placeholder="وارد کردن نام کاربری" name="uname" required>
-
-                                    <label for="psw"><b>کلمه عبور </b></label>
-                                    <input type="password" placeholder="وارد کردن کلمه عبور" name="psw" required>
-
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> مرا به خاطر بسپار
-                                    </label><br>
-                                    <button type="submit" class="bttn"
-                                        style="background-color: rgb(37, 145, 253);">ورود</button>
-                                </div>
-                                <div class="container" style="background-color:#ffffff; ">
-                                    <span class="psw"> <a href="#">کلمه عبور خود را فراموش کرده اید؟</a></span>
-                                </div><br>
-                                <div class="container" style="background-color:#ffffff; ">
-                                    <span class="psw1"> <a href="#" > ثبت نام کنید</a></span>
-                                </div>
-                            </form>
+                <div class="col-md-5 col-lg-4 px-0 px-md-1">
+                    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                        <div class="top-header-social-medias my-2 my-md-0">
+                            <ul class="list-unstyled mb-0 d-flex">
+                                <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i> </a></li>
+                                <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i> </a></li>
+                                <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a></li>
+                            </ul>
                         </div>
-                    </a>
+                        <!-- login -->
+                        <div class="top-header-login w-100">
+                            <a href="#" class="btn mr-md-3">
+                                ورود به سامانه
+                            </a>
+                        </div>
+                        <!-- End of login -->
+                    </div>
                 </div>
-                <!-- End of login -->
 
             </div>
         </div>
-    </section>
+    </header>
     <!-- End of top header -->
 
     <!-- Branding -->
     <section id="branding">
-        <div class="container">
+        <div class="container md-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6 order-2 order-sm-0">
                     <div class="d-flex">
-                        <img src="./assets/images/450x150.png" class="img-fluid" alt="Responsive image">
+                        <img src="./assets/images/ayandegan.png" class="img-fluid" alt="school logo">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 order-1 d-none d-sm-block">
                     <div class="d-flex justify-content-end">
-                        <img src="./assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
+                        <img src="./assets/images/flag-iran.jpg" class="img-fluid" alt="iran flag"> 
                     </div>
                 </div>
             </div>
@@ -98,46 +73,52 @@
     <!-- Menu -->
     <header id="main-menu">
         <nav class="navbar navbar-expand-md py-1">
-            <div class="container">
-                <div>
-                    <ul class="navbar-nav pr-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات
-                                مدرسه</a>
-                            <ul class="dropdown-menu main-menu-sub-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">نمازخانه</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">آزمایشگاه</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">سایت کامپیوتر</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">کتابخانه</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">اخبار</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">مقالات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="./pages/membership.html">ثبت نام</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="./pages/aboutus.html">درباره ما</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="./pages/contactus.html">تماس با ما</a>
-                        </li>
-                    </ul>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#my-nav">
+                <i class="las la-bars la-2x text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <div class="container md-container">
+                    <div>
+                        <ul class="navbar-nav pr-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light ml-md-2" href="#">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle mx-md-2" data-toggle="dropdown" href="#">امکانات
+                                    مدرسه</a>
+                                <ul class="dropdown-menu main-menu-sub-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">نمازخانه</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">آزمایشگاه</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">سایت کامپیوتر</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">کتابخانه</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="#">اخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="#">مقالات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="./pages/membership.html">ثبت نام</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="./pages/aboutus.html">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-2" href="./pages/contactus.html">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -157,7 +138,7 @@
                             <li data-target="#mycarousel" data-slide-to="2"></li>
                         </ol>
                         
-                        <div class="carousel-inner" style="height: 600px;">
+                        <div class="carousel-inner">
                             <div class="carousel-item active" >
                                 <a href="#"><img src="../src/assets/images/99.jpg" alt=""
                                         class="w-100 d-block"></a>
@@ -199,7 +180,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-4 mb-lg-0" >
+                <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
                     <a href="#">
                         <div class="card course">
                             <img src="../src/assets/images/4.png" class="card-img-top" alt="...">
@@ -215,7 +196,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mb-4 mb-lg-0">
+                <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
                     <a href="#">
                         <div class="card course">
                             <img src="../src/assets/images/7.png" class="card-img-top" alt="...">
@@ -231,7 +212,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mb-4 mb-lg-0">
+                <div class="col-md-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
                     <a href="#">
                         <div class="card course">
                             <img src="../src/assets/images/8.png" class="card-img-top" alt="...">
@@ -276,19 +257,19 @@
                                 <p>زمان باقی مانده تا شروع پیش ثبت نام</p>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <p>280</p>
+                                        <p id="days"></p>
                                         <span>روز</span>
                                     </li>
                                     <li>
-                                        <p>15</p>
+                                        <p id="hours"></p>
                                         <span>ساعت</span>
                                     </li>
                                     <li>
-                                        <p>45</p>
+                                        <p id="minutes"></p>
                                         <span>دقیقه</span>
                                     </li>
                                     <li>
-                                        <p id="second">59</p>
+                                        <p id="seconds"></p>
                                         <span>ثانیه</span>
                                     </li>
                                 </ul>
@@ -306,47 +287,45 @@
 
 
     <!-- timeline -->
-    <div class="container">
-        <div class="row" style="margin-top: 30px;">
-            <div class="col-12">
-                <h1 class="text-center">
-                    <span class="main-title mb-4">دانش آموزان و اولیا</span>
-                </h1>
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">
+                        <span class="main-title mb-4">دانش آموزان و اولیا</span>
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline">
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-circle">
-                                <div class="timeline-icon">
-                                    <i><img src="https://img.icons8.com/plasticine/80/000000/reading.png" /></i>
-                                </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timelines">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="./assets/images/study.svg" />
                             </div>
-                            <h3 class="title">بخش دانش‌آموزان</h3>
-                            <p class="text">
-                                دانش آموزان عزیز برای ورود به صفحه کاربری خود در این قسمت وارد شوید و سپس login کنید
-                            </p>
-                        </a>
-                    </div>
-                    <div class="timeline">
-                        <a href="#" class="timeline-content">
-                            <div class="timeline-circle">
-                                <div class="timeline-icon">
-                                    <i><img src="https://img.icons8.com/color/80/000000/parent-guardian.png" /></i>
-                                </div>
+                            <div class="timeline-body" data-aos="fade-left" data-aos-duration="1000">
+                                <h3 class="title">بخش دانش‌آموزان</h3>
+                                <p class="text">
+                                    دانش آموزان عزیز برای ورود به صفحه کاربری خود در این قسمت وارد شوید و سپس login کنید
+                                </p>
                             </div>
-                            <h3 class="title">بخش ویژه والدین</h3>
-                            <p class="text">
-                                والدین عزیز برای ورود به صفحه کاربری خود در این قسمت وارد شوید و سپس login کنید
-                            </p>
-                        </a>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <img src="./assets/images/family.svg" />
+                            </div>
+                            <div class="timeline-body" data-aos="fade-right" data-aos-duration="1000">
+                                <h3 class="title">بخش ویژه والدین</h3>
+                                <p class="text">
+                                    والدین عزیز برای ورود به صفحه کاربری خود در این قسمت وارد شوید و سپس login کنید
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><br>
+    </section>
     <!--end of timeline -->
 
     <!-- School overview -->
@@ -364,8 +343,8 @@
             <span><img src="./assets/images/shape3.png" alt=""></span>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 overview dark">
+            <div class="row" data-aos="flip-left" data-aos-duration="500">
+                <div class="col-md-4 overview dark">
                     <div class="py-4 px-2">
                         <h2 class="title text-center">اهداف آموزشی</h2>
                         <ul class="list-unstyled">
@@ -396,7 +375,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 overview">
+                <div class="col-md-4 overview">
                     <div class="py-4 px-2">
                         <h2 class="title text-center">اهداف پرورشی</h2>
                         <ul class="list-unstyled">
@@ -427,7 +406,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 overview light">
+                <div class="col-md-4 overview light">
                     <div class="py-4 px-2">
                         <h2 class="title text-center">امکانات مدرسه</h2>
                         <ul class="list-unstyled">
@@ -457,107 +436,111 @@
 
 
     <!-- Teachers slider -->
-    <div class="container-fluid" style="color: black; background-color: rgb(234, 236, 236); padding: 20px;">
-        <div class="row">
-            <div class="col-12" style="margin-top: 40px;">
-                <h1 class="text-center">
-                    <span class="main-title mb-4">معلم ها و همکاران</span>
-                </h1>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                        <div class="social_media_team">
-                            <ul class="team_social">
-                                <li><a href="#"><i class="la la-telegram"></i></a></li>
-                                <li><a href="#"><i class="la la-mobile"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="post-title">
-                            <a href="#">خانم احمدی</a>
-                            <small>معلم پایه اول</small>
-                        </h3>
-                        <p class="description">
-                            خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
-                        </p>
-                        <a href="#" class="read">بیشتر بخوانید</a>
-                    </div>
+    <section id="teachers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">
+                        <span class="main-title mb-4 text-white">معلم ها و همکاران</span>
+                    </h1>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                        <div class="social_media_team">
-                            <ul class="team_social">
-                                <li><a href="#"><i class="la la-telegram"></i></a></li>
-                                <li><a href="#"><i class="la la-mobile"></i></a></li>
-                            </ul>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team even">
+                        <div class="pic">
+                            <img src="./assets/images/person.png" alt="">
+                            <div class="social_media_team">
+                                <ul class="team_social">
+                                    <li><a href="#"><i class="la la-telegram"></i></a></li>
+                                    <li><a href="#"><i class="la la-mobile"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <h3 class="post-title">
-                            <a href="#">خانم احمدی</a>
-                            <small>معلم پایه اول</small>
-                        </h3>
-                        <p class="description">
-                            خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
-                        </p>
-                        <a href="#" class="read">بیشتر بخوانید</a>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#">خانم احمدی</a>
+                                <small>معلم پایه اول</small>
+                            </h3>
+                            <p class="description">
+                                خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
+                            </p>
+                            <a href="#" class="read">بیشتر بخوانید</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                        <div class="social_media_team">
-                            <ul class="team_social">
-                                <li><a href="#"><i class="la la-telegram"></i></a></li>
-                                <li><a href="#"><i class="la la-mobile"></i></a></li>
-                            </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team odd">
+                        <div class="pic">
+                            <img src="./assets/images/person.png" alt="">
+                            <div class="social_media_team">
+                                <ul class="team_social">
+                                    <li><a href="#"><i class="la la-telegram"></i></a></li>
+                                    <li><a href="#"><i class="la la-mobile"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <h3 class="post-title">
-                            <a href="#">خانم احمدی</a>
-                            <small>معلم پایه اول</small>
-                        </h3>
-                        <p class="description">
-                            خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
-                        </p>
-                        <a href="#" class="read">بیشتر بخوانید</a>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#">خانم احمدی</a>
+                                <small>معلم پایه اول</small>
+                            </h3>
+                            <p class="description">
+                                خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
+                            </p>
+                            <a href="#" class="read">بیشتر بخوانید</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="our-team">
-                    <div class="pic">
-                        <img src="https://via.placeholder.com/100x100" alt="">
-                        <div class="social_media_team">
-                            <ul class="team_social">
-                                <li><a href="#"><i class="la la-telegram"></i></a></li>
-                                <li><a href="#"><i class="la la-mobile"></i></a></li>
-                            </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team even">
+                        <div class="pic">
+                            <img src="./assets/images/person.png" alt="">
+                            <div class="social_media_team">
+                                <ul class="team_social">
+                                    <li><a href="#"><i class="la la-telegram"></i></a></li>
+                                    <li><a href="#"><i class="la la-mobile"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#">خانم احمدی</a>
+                                <small>معلم پایه اول</small>
+                            </h3>
+                            <p class="description">
+                                خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
+                            </p>
+                            <a href="#" class="read">بیشتر بخوانید</a>
                         </div>
                     </div>
-                    <div>
-                        <h3 class="post-title">
-                            <a href="#">خانم احمدی</a>
-                            <small>معلم پایه اول</small>
-                        </h3>
-                        <p class="description">
-                            خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
-                        </p>
-                        <a href="#" class="read">بیشتر بخوانید</a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team odd">
+                        <div class="pic">
+                            <img src="./assets/images/person.png" alt="">
+                            <div class="social_media_team">
+                                <ul class="team_social">
+                                    <li><a href="#"><i class="la la-telegram"></i></a></li>
+                                    <li><a href="#"><i class="la la-mobile"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#">خانم احمدی</a>
+                                <small>معلم پایه اول</small>
+                            </h3>
+                            <p class="description">
+                                خانم احمدی با بیش از 20 سال سابقه درخشان در مقطع ابتدایی
+                            </p>
+                            <a href="#" class="read">بیشتر بخوانید</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End of teachers slider -->
 
 
@@ -565,12 +548,12 @@
     <!-- Lastes news -->
     <section id="news">
         <div class="slider-controller">
-            <div class="prev">
+            <!-- <div class="prev d-none d-xl-flex">
                 <i class="las la-chevron-left la-3x"></i>
             </div>
-            <div class="next">
+            <div class="next d-none d-xl-flex">
                 <i class="las la-chevron-right la-3x"></i>
-            </div>
+            </div> -->
         </div>
         <div class="container">
             <div class="row">
@@ -581,7 +564,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 d-flex flex-column">
+                <div class="col-md-4 d-flex flex-column mb-4 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
                     <div class="news-item d-flex flex-column">
                         <div class="news-info">
                             <div class="d-flex justify-content-between align-items-center">
@@ -618,7 +601,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex flex-column">
+                <div class="col-md-4 d-flex flex-column mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000">
                     <div class="news-item d-flex flex-column">
                         <div class="news-info">
                             <div class="d-flex justify-content-between align-items-center">
@@ -654,7 +637,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex flex-column">
+                <div class="col-md-4 d-flex flex-column mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
                     <div class="news-item d-flex flex-column">
                         <div class="news-info">
                             <div class="d-flex justify-content-between align-items-center">
@@ -698,45 +681,77 @@
     <!-- End of latest news -->
 
     <!-- Footer -->
-    <div class="content">
-        <footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h5>تماس با ما</h5>
-                        <ul>
-                            <li><img src="https://img.icons8.com/material/20/000000/worldwide-location--v1.png" /><span
-                                    href="#"> لرستان خرم آباد خیابان انقلاب کوچه هفتم آراسته</span></li>
-                            <li><img src="https://img.icons8.com/windows/20/000000/outgoing-call.png" /><span>
-                                    33333333-33322233</span></li>
-                            <li><img src="https://img.icons8.com/ios-filled/20/000000/email-open.png" /><span>
-                                    ayandegan@yahoo.com</span></li>
-                        </ul>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    <div class="logo">
+                        <img src="./assets/images/ayandegan-white.png" class="d-block w-100" alt="logo">
                     </div>
-                    <div class="col-sm-6">
-                        <h5>درباره ما</h5>
-                        <ul>
-                            <li><span>مدرسه ی هوشمند غیر دولتی آیندگان به منظور فراهم سازی زمینه توسعه ی تعلیم وتربیت بر
-                                    مبنای اصول و ارزش های دینی در چهارچوب مدرسه ابتدایی و راهنمایی تاسیس گردید</span>
-                            </li>
-                        </ul>
+                    <div class="description">
+                        <p>
+                            پیش دبستان و دبستان پسرانه غیر دولتی هوشمند آیندگان به منظور فراهم سازی زمینه توسعه ی تعلیم و تربیت بر مبنای اصول و ارزشهای دینی، بومی و ملی، با ایجاد زمینه رشد و پرورش همه جانبه کودکان و شناسایی زمینه سازی بروز و ظهور استعدادها و توانمندی های آنان به عنوان سرمایه های اجتماعی در چارچوب اهداف دوره ابتدایی در سال ۱۳۸۶ تاسیس گردیده است.
+                        </p>
                     </div>
                 </div>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1978.0836681009205!2d48.35772125665037!3d33.50848100777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1596284045279!5m2!1sen!2s"
-                    width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0">
-                </iframe>
+                <div class="col-md-6">
+                    <h2>
+                        <span class="main-title">تماس با ما</span>
+                    </h2>
+                    <ul class="list-unstyled informations">
+                        <li>
+                            <span class="title"> <i class="las la-map-marker ml-1"></i> نشانی: </span>
+                            <span>لرستان، خرم آباد، خیابان انقلاب، کوچه هفتم آراسته</span>
+                        </li>
+                        <li>
+                            <span class="title"> <i class="las la-phone ml-1"></i> تلفن: </span>
+                            <span>۳۳۳۲۲۲۳۳-۰۶۶</span>
+                        </li>
+                        <li>
+                            <span class="title"> <i class="las la-envelope ml-1"></i> ایمیل: </span>
+                            <span class="en">ayandegan@yahoo.com</span>
+                        </li>
+                        <li>
+                            <span class="title"> <i class="lab la-internet-explorer ml-1"></i> سایت: </span>
+                            <span class="en">ayandeganschool.com</span>
+                        </li>
+                    </ul>
+
+                    <h2>
+                        <span class="main-title">با ما همراه باشید</span>
+                    </h2>
+                    <ul class="list-unstyled mb-0 d-flex footer-social-media">
+                        <li><a href="#" class="pl-3" title="instagram"> <i class="lab la-instagram la-2x"></i> </a></li>
+                        <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-2x"></i> </a></li>
+                        <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-2x"></i> </a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="social-networks">
-                <a href="#" class="twitter"><i class="la la-twitter la-lg"></i></a>
-                <a href="#" class="telegram"><i class="la la-telegram la-lg"></i></a>
-                <a href="#" class="instagram"><i class="la la-instagram la-lg"></i></a>
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1978.0836681009205!2d48.35772125665037!3d33.50848100777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1596284045279!5m2!1sen!2s"
+                        width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                    </iframe>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <!-- End Of Footer-->
+
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center m-0 py-3">
+                        تمامی حقوق متعلق به این سایت برای پیش دبستان و دبستان پسرانه غیر دولتی هوشمند <span>آیندگان</span> محفوظ می باشد.©
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- JavaScript File -->
     <script src="./js/all.js"></script>

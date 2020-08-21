@@ -4,11 +4,32 @@
     border-bottom: 3px solid #F9CE00;
 
     .main-menu-sub-menu {
+        background-color: lighten(#1A2930, 7%);
+        @media(min-width: 768px) {
+            background-color: #fff;
+        }
         padding: 0;
         a {
             padding-top: 10px;
             padding-bottom: 10px;
-            border-bottom: 1px solid #f2f2f2;
+            border-bottom: 1px solid #1A2930;
+            color: #f1f1f1;
+
+            &:hover {
+                background-color: lighten(#1A2930, 3%);
+                @media(min-width: 768px) {
+                    background-color: #f0f0f0f0;
+                }
+            }
+
+            @media(min-width: 768px) {
+                color: #222;
+                border-bottom: 1px solid #f0f0f0;
+            }
+        }
+
+        li:last-child a {
+            border-bottom: none;
         }
     }
 }

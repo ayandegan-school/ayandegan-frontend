@@ -47,21 +47,29 @@
 @import "bootstrap/rtl";
 
 
+@import './aos/core';
+@import './aos/easing';
+@import './aos/animations';
+
+
 
 
 // Base
 @import "ayandegan/base/typography";
+@import "ayandegan/base/utility";
 
 // Layouts
 @import "ayandegan/layout/top-header";
 @import "ayandegan/layout/branding";
 @import "ayandegan/layout/main-menu";
+@import "ayandegan/layout/slider";
 @import "ayandegan/layout/courses";
 @import "ayandegan/layout/registration";
 @import "ayandegan/layout/school-overview";
 @import "ayandegan/layout/news";
 @import "ayandegan/layout/timeline";
 @import "ayandegan/layout/teachers-slider";
+
 @import "ayandegan/layout/footer";
 @import "ayandegan/layout/login";
 @import "ayandegan/layout/pre-registration";

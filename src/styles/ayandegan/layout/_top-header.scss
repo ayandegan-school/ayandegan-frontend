@@ -5,6 +5,11 @@
 
     .top-header-hadith {
         flex-grow: 1;
+        text-align: center;
+
+        @media(min-width: 768px) {
+            text-align: right;
+        }
     }
     
     .top-header-social-medias {
@@ -20,18 +25,18 @@
     }
 
     .top-header-login {
-        button {
-            background-color: #F9CE00;
-            border-radius: 0;
-            padding: 8px 25px;
-            transition: all .3s;
-            &:hover {
-                background-color: darken($color: #F9CE00, $amount: 3%);
-            }
-        }
         a {
             color: #1A2930;
             text-decoration: none;
+            background-color: #F9CE00;
+            border-radius: 0;
+            padding: 8px 25px;
+            display: block;
+            transition: all .3s;
+            font-size: 1em;
+            &:hover {
+                background-color: darken($color: #F9CE00, $amount: 3%);
+            }
         }
     }
 }

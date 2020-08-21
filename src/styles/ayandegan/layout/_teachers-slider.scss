@@ -1,6 +1,26 @@
+#teachers {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url('../assets/images/4083365.jpg') center center/ cover;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+
+
 .our-team{
     text-align: center;
+    border-radius: 3px;
+    padding: 16px 0px;
 }
+
+// .our-team.even {
+//     background-color: #F9CE00;
+// }
+
+// .our-team.odd {
+//     background-color: #059b9b;
+// }
+
 .our-team .pic{
     position: relative;
 }
@@ -53,7 +73,7 @@
     background: #F9CE00;
 }
 .post-title > a{
-    color:rgb(0, 0, 0);
+    color:#fff;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -67,11 +87,11 @@
     padding: 0 5px 0 10px;
 }
 .post-title small{
-    color:#999;
+    color:#fff;
     font-size: 12px;
 }
 .description{
-    color:rgb(0, 0, 0);
+    color:#fff;
 }
 .read{
     font-size: 13px;

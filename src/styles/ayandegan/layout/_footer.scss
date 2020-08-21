@@ -1,41 +1,55 @@
-#myFooter {
-    background-color: #112736;
-        color: white;
-        padding-top: 20px;
-        // margin-top: 40px;
+#footer {
+    background-color: #1a2930;
+    padding: 70px 20px;
+    color: #f1f1f1;
+    .description {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 2;
     }
-        #map-container {
-        height: 240px;
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 10px;
+
+    .main-title {
+        font-size: 16px;
+        font-weight: 400;
+        color: #f1f1f1;
+        margin-bottom: 20px;
+        &:after {
+            width: 3px;
+            height: 30px;
+        }
     }
-        #myFooter .row {
-        margin: 0 85px;
+
+    .informations {
+        li {
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 1.7;
+            .title {
+                color: #F9CE00;
+            }
+        }
     }
-     #myFooter ul {
-        list-style-type: none;
+
+    .footer-social-media {
+        a {
+            color: rgba(255, 255, 255, .6);
+            padding-top: 6px;
+            padding-bottom: 6px;
+            transition: all .3s;
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
     }
-        #myFooter h5 {
-        font-size: 15px;
-        color: white;
-        font-weight: bold;
-        margin-top: 30px;
+}
+
+#copyright {
+    background-color: darken(#1a2930, 5%);
+    color: #fff;
+    font-size: 12px;
+
+    span {
+        color: #F9CE00;
     }
-    
-    #myFooter a {
-        color: #d2d1d1;
-        text-decoration: none;
-    }
-    
-    #myFooter a:hover,
-    #myFooter a:focus {
-        text-decoration: none;
-        color: white;
-    }
-    
-    #myFooter .social-networks {
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 38px;
-    }
+}
