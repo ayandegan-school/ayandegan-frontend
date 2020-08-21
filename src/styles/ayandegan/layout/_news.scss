@@ -3,7 +3,7 @@
     background: url('../assets/images/shape.png') no-repeat center/ cover, #f9f9f9;
     position: relative;
 
-
+    overflow: hidden;
     .slider-controller {
         .next, .prev {
             position: absolute;
