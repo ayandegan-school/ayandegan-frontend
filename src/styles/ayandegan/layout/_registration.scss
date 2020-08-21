@@ -17,20 +17,27 @@
     .count li {
 
         margin-right: 20px;
-        display: inline-block;
+        // display: inline-block;
         text-align: center;
         &:first-child {
             margin-right: 0;
         }
         p {
             display: block;
-            width: 85px;
-            height: 85px;
+            width: 57px;
+            height: 57px;
             border: 3px solid #fff;
             border-radius: .25em;
-            font-size: 30px;
-            line-height: 85px;
+            font-size: 1.5em;
+            line-height: 57px;
             text-align: center;
+
+            @media(min-width: 500px) {
+                width: 85px;
+                height: 85px;
+                line-height: 85px;
+                font-size: 2em;
+            }
         }
     }
 

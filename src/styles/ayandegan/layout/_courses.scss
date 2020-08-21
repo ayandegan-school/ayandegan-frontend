@@ -1,6 +1,7 @@
 #courses {
     padding: 50px 0px;
     background: url('../assets/images/process-background-line.png') no-repeat center center, #f9f9f9;
+    overflow: hidden;
     .course {
         box-shadow: 0 0 30px #cccccc73;
         transition: all .3s;
