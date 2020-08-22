@@ -20,73 +20,51 @@
 
 <body>
     <!-- Top header / not fully responsive -->
-    <section id="top-header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="top-header-hadith">
+    <header id="top-header">
+        <div class="container md-container">
+            <div class="row justify-content-between align-items-center">
+                <div class="top-header-hadith col-md-7 col-lg-8 py-2 py-md-0">
                     <p class="mb-0">امام سجاد (علیه السلام) : برای هر چیزی میوه ای است و میوه شنوایی، کلام نیکوست.</p>
                 </div>
-                <div class="top-header-social-medias">
-                    <ul class="list-unstyled mb-0 d-flex">
-                        <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i> </a></li>
-                        <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i> </a></li>
-                        <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a></li>
-                    </ul>
-                </div>
-
-                <!-- login -->
-                <div class="top-header-login">
-                    <a href="#">
-                        <button type="button" class="btn mr-3"
-                            onclick="document.getElementById('id01').style.display='block'">ورود به سامانه</button>
-                        <div id="id01" class="modal">
-                            <form class="modal-content animate " method="post">
-                                <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                        title="خروج">&times;</span>
-                                </div>
-                                <div class="containermodal" style="text-align: center;">
-                                    <label for="uname"><b>نام کاربری</b></label>
-                                    <input type="text" placeholder="وارد کردن نام کاربری" name="uname" required>
-
-                                    <label for="psw"><b>کلمه عبور </b></label>
-                                    <input type="password" placeholder="وارد کردن کلمه عبور" name="psw" required>
-
-                                    <label>
-                                        <input type="checkbox" checked="checked" name="remember"> مرا به خاطر بسپار
-                                    </label><br>
-                                    <button type="submit" class="bttn"
-                                        style="background-color: rgb(37, 145, 253);">ورود</button>
-                                </div>
-                                <div class="container" style="background-color:#ffffff; ">
-                                    <span class="psw"> <a href="#">کلمه عبور خود را فراموش کرده اید؟</a></span>
-                                </div><br>
-                                <div class="container" style="background-color:#ffffff; ">
-                                    <span class="psw1"> <a href="#"> ثبت نام کنید</a></span>
-                                </div>
-                            </form>
+                <div class="col-md-5 col-lg-4 px-0 px-md-1">
+                    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                        <div class="top-header-social-medias my-2 my-md-0">
+                            <ul class="list-unstyled mb-0 d-flex">
+                                <li><a href="#" class="px-3" title="instagram"> <i class="lab la-instagram la-lg"></i>
+                                    </a></li>
+                                <li><a href="#" class="px-3" title="telegram"> <i class="lab la-telegram la-lg"></i>
+                                    </a></li>
+                                <li><a href="#" class="px-3" title="twitter"> <i class="lab la-twitter la-lg"></i> </a>
+                                </li>
+                            </ul>
                         </div>
-                    </a>
+                        <!-- login -->
+                        <div class="top-header-login w-100">
+                            <a href="#" class="btn mr-md-3">
+                                ورود به سامانه
+                            </a>
+                        </div>
+                        <!-- End of login -->
+                    </div>
                 </div>
-                <!-- End of login -->
 
             </div>
         </div>
-    </section>
+    </header>
     <!-- End of top header -->
 
     <!-- Branding -->
     <section id="branding">
-        <div class="container">
+        <div class="container md-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6 order-2 order-sm-0">
                     <div class="d-flex">
-                        <img src="../assets/images/ayandegan.png" class="img-fluid" alt="Responsive image">
+                        <img src="../assets/images/ayandegan.png" class="img-fluid" alt="school logo">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 order-1 d-none d-sm-block">
                     <div class="d-flex justify-content-end">
-                        <img src="../assets/images/flag-iran.jpg" class="img-fluid" alt="Responsive image">
+                        <img src="../assets/images/flag-iran.jpg" class="img-fluid" alt="iran flag">
                     </div>
                 </div>
             </div>
@@ -97,46 +75,53 @@
     <!-- Menu -->
     <header id="main-menu">
         <nav class="navbar navbar-expand-md py-1">
-            <div class="container">
-                <div>
-                    <ul class="navbar-nav pr-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light ml-2" href="#">صفحه اصلی</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-light dropdown-toggle mx-2" data-toggle="dropdown" href="#">امکانات
-                                مدرسه</a>
-                            <ul class="dropdown-menu main-menu-sub-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">نمازخانه</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">آزمایشگاه</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">سایت کامپیوتر</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">کتابخانه</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">اخبار</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">مقالات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">ثبت نام</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">درباره ما</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light mx-2" href="#">تماس با ما</a>
-                        </li>
-                    </ul>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#my-nav">
+                <i class="las la-bars la-2x text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <div class="container md-container">
+                    <div>
+                        <ul class="navbar-nav pr-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light ml-md-2" href="../index.html">صفحه اصلی</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle mx-md-2" data-toggle="dropdown"
+                                    href="#">امکانات
+                                    مدرسه</a>
+                                <ul class="dropdown-menu main-menu-sub-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">نمازخانه</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">آزمایشگاه</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">سایت کامپیوتر</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">کتابخانه</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="#">اخبار</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="#">گالری تصاویر</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="membership.html">ثبت نام</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-md-2" href="aboutus.html">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light mx-2" href="contactus.html">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -144,8 +129,8 @@
     <!-- End of menu -->
 
     <!-- form -->
-
-    <main class="my-form">
+    <!-- <form action="/action_page.php" method="get"> -->
+    <form class="my-form" method="get">
         <div class="cotainer">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -153,38 +138,39 @@
                         <div class="card-header">مشخصات</div>
                         <div class="card-body">
                             <form name="my-form" method="">
-
-                                <!-- Specifications -->
+                             <!-- Specifications -->
                                 <div class="form-group row">
-                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">نام</label>
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right ">نام</label>
                                     <div class="col-md-6">
                                         <input type="text" id="full_name" class="form-control" name="full-name"
-                                            placeholder="نام خود را وارد کنید">
+                                            placeholder="نام خود را وارد کنید" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="full_name" class="col-md-4 col-form-label text-md-right">نام
                                         خانوادگی</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="full_name" class="form-control" name="full-name"
-                                            placeholder="نام خانوادگی خود را وارد کنید">
+                                        <input type="text" id="full_name" class="form-control" name="full-lastname"
+                                            placeholder="نام خانوادگی خود را وارد کنید" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره
+                                        کد
                                         ملی</label>
                                     <div class="col-md-6">
                                         <input type="text" id="National-code" class="form-control col-md-10"
-                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="id" class="col-md-4 col-form-label text-md-right">شماره شناسنامه</label>
+                                    <label for="id" class="col-md-4 col-form-label text-md-right">شماره
+                                        شناسنامه</label>
                                     <div class="col-md-6">
                                         <input type="text" id="id" class="form-control" name="id"
-                                            placeholder="شماره شناسنامه خود را وارد کنید">
+                                            placeholder="شماره شناسنامه خود را وارد کنید" required>
                                     </div>
                                 </div>
 
@@ -193,7 +179,7 @@
                                         شناسنامه</label>
                                     <div class="col-md-6">
                                         <input type="text" id="place" class="form-control" name="place"
-                                            placeholder="محل صدور شناسنامه را وارد کنید">
+                                            placeholder="محل صدور شناسنامه را وارد کنید" required>
                                     </div>
                                 </div>
 
@@ -202,14 +188,59 @@
                                         شناسنامه</label>
                                     <div class="col-md-6">
                                         <input type="text" id="serial" class="form-control " name="serial"
-                                            placeholder="سریال شناسنامه خود را وارد کنید">
+                                            placeholder="سریال شناسنامه خود را وارد کنید" required>
                                     </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سری
+                                        شناسنامه</label>
+                                    <div class="col-md-3">
+                                        <input type="text" id="seri" class="form-control " name="seri"
+                                            placeholder="سری شناسنامه " required>
+                                        <label for="Grade"> / </label>
+                                    </div>
+
+                                    <select name="Grade" class="form-control direc">
+                                        <option value="0">الف</option>
+                                        <option value="1">ب</option>
+                                        <option value="2">پ</option>
+                                        <option value="3">ت</option>
+                                        <option value="4">ث</option>
+                                        <option value="5">ج</option>
+                                        <option value="6">چ</option>
+                                        <option value="7">ح</option>
+                                        <option value="8">خ</option>
+                                        <option value="9">د</option>
+                                        <option value="10">ذ</option>
+                                        <option value="11">ر</option>
+                                        <option value="12">ز</option>
+                                        <option value="13">ژ</option>
+                                        <option value="14">س</option>
+                                        <option value="15">ش</option>
+                                        <option value="16">ص</option>
+                                        <option value="17">ض</option>
+                                        <option value="18">ط</option>
+                                        <option value="19">ظ</option>
+                                        <option value="20">ع</option>
+                                        <option value="21">غ</option>
+                                        <option value="22">ف</option>
+                                        <option value="23">ق</option>
+                                        <option value="24">ک</option>
+                                        <option value="25">گ</option>
+                                        <option value="26">ل</option>
+                                        <option value="27">م</option>
+                                        <option value="28">ن</option>
+                                        <option value="29">و</option>
+                                        <option value="30">ه</option>
+                                        <option value="31">ی</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-group row">
                                     <label for="Grade" class="col-md-4 col-form-label text-md-right">خواهان ثبت
                                         نام در مقطع</label>
-                                    <select name="Grade" class="col-md-4 form-control">
+                                    <select name="Grade" class="form-control drop">
                                         <option selected>انتخاب کنید</option>
                                         <option value="pish">پیش دبستان</option>
                                         <option value="1">پایه اول</option>
@@ -224,7 +255,7 @@
                                 <div class="form-group row">
                                     <label for="religion" class="col-md-4 col-form-label text-md-right">دین و
                                         مذهب</label>
-                                    <select name="religione" class="col-md-4 form-control">
+                                    <select name="religione" class="form-control drop">
                                         <option selected>انتخاب کنید</option>
                                         <option value="pish">اسلام-تشیع</option>
                                         <option value="1">اسلان-تسنن</option>
@@ -240,7 +271,8 @@
                                     <label for="Birthday" class="col-md-4 col-form-label text-md-right">تاریخ
                                         تولد</label>
                                     <div class="col-md-6">
-                                        <input type="date" id="Birthday" class="form-control col-md-8">
+                                        <input type="text" id="birth" class="form-control" name="birth"
+                                            placeholder="تاریخ تولد خود را وارد کنید" required>
                                     </div>
                                 </div>
 
@@ -248,7 +280,8 @@
                                     <label for="photo" class="col-md-4 col-form-label text-md-right">انتخاب تصویر
                                         پرسنلی</label>
                                     <div class="col-md-4">
-                                        <input type="file" id="photo" class="form-control" name="photo">
+                                        <input type="file" id="photo" class="form-control" name="photo"
+                                            style="width: 309px;" required>
                                     </div>
                                 </div>
                             </form>
@@ -258,12 +291,12 @@
 
                     <!-- Current School -->
                     <div class="card">
-                        <div class="card-header">مدرسه فعلی</div>
+                        <div class="card-header">مدرسه سال قبل</div>
                         <div class="card-body">
                             <form name="my-form" method="">
                                 <div class="form-group row">
                                     <label for="school" class="col-md-4 col-form-label text-md-right">نوع</label>
-                                    <select name="school" class="col-md-4 form-control">
+                                    <select name="school" class="form-control drop" required>
                                         <option selected>انتخاب کنید</option>
                                         <option value="pish">دولتی</option>
                                         <option value="1">غیر دولتی</option>
@@ -282,19 +315,7 @@
                                 <div class="form-group row">
                                     <label for="grades" class="col-md-4 col-form-label text-md-right">معدل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="grades" class="form-control" name="place">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="grades" class="col-md-4 col-form-label text-md-right">انضباط</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="grades" class="form-control" name="place">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="grades" class="col-md-4 col-form-label text-md-right">ریاضی</label>
-                                    <div class="col-md-6">
-                                        <input type="text" id="grades" class="form-control" name="place">
+                                        <input type="text" id="grades" class="form-control" name="grades" required>
                                     </div>
                                 </div>
                             </form>
@@ -312,26 +333,106 @@
                                 <div class="form-group row">
                                     <label for="name" class="col-md-4 col-form-label text-md-right">نام</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="name" class="form-control " name="serial">
+                                        <input type="text" id="name" class="form-control " name="name" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ تولد</label>
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام پدر</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="birth" class="form-control " name="serial">
+                                        <input type="text" id="fathername" class="form-control " name="fathername" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ
+                                        تولد</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="birth" class="form-control " name="birth" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره
+                                        کد
                                         ملی</label>
                                     <div class="col-md-6">
                                         <input type="text" id="National-code" class="form-control col-md-10"
-                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label for="id" class="col-md-4 col-form-label text-md-right">شماره
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="id" class="form-control" name="id"
+                                            placeholder="شماره شناسنامه خود را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="place" class="col-md-4 col-form-label text-md-right">محل صدور
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="place" class="form-control" name="place"
+                                            placeholder="محل صدور شناسنامه را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سریال
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="serial" class="form-control " name="serial"
+                                            placeholder="سریال شناسنامه خود را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سری
+                                        شناسنامه</label>
+                                    <div class="col-md-3">
+                                        <input type="text" id="seri" class="form-control " name="seri"
+                                            placeholder="سری شناسنامه " required>
+                                        <label for="Grade"> / </label>
+                                    </div>
+
+                                    <select name="Grade" class="form-control direc">
+                                        <option value="0">الف</option>
+                                        <option value="1">ب</option>
+                                        <option value="2">پ</option>
+                                        <option value="3">ت</option>
+                                        <option value="4">ث</option>
+                                        <option value="5">ج</option>
+                                        <option value="6">چ</option>
+                                        <option value="7">ح</option>
+                                        <option value="8">خ</option>
+                                        <option value="9">د</option>
+                                        <option value="10">ذ</option>
+                                        <option value="11">ر</option>
+                                        <option value="12">ز</option>
+                                        <option value="13">ژ</option>
+                                        <option value="14">س</option>
+                                        <option value="15">ش</option>
+                                        <option value="16">ص</option>
+                                        <option value="17">ض</option>
+                                        <option value="18">ط</option>
+                                        <option value="19">ظ</option>
+                                        <option value="20">ع</option>
+                                        <option value="21">غ</option>
+                                        <option value="22">ف</option>
+                                        <option value="23">ق</option>
+                                        <option value="24">ک</option>
+                                        <option value="25">گ</option>
+                                        <option value="26">ل</option>
+                                        <option value="27">م</option>
+                                        <option value="28">ن</option>
+                                        <option value="29">و</option>
+                                        <option value="30">ه</option>
+                                        <option value="31">ی</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group row">
                                     <label for="education" class="col-md-4 col-form-label text-md-right">تحصیلات</label>
-                                    <select name="education" class="col-md-4 form-control">
+                                    <select name="education" class=" form-control drop" required>
                                         <option selected>انتخاب کنید</option>
                                         <option value="pish">سیکل</option>
                                         <option value="1">دیپلم</option>
@@ -342,10 +443,11 @@
                                         <option value="6">فوق دکترا</option>
                                     </select>
                                 </div>
+
                                 <div class="form-group row">
                                     <label for="Grade" class="col-md-4 col-form-label text-md-right">سابقه عضویت در
                                         انجمن اولیا</label>
-                                    <select name="Grade" class="col-md-4 form-control">
+                                    <select name="Grade" class="form-control drop" required>
                                         <option selected>انتخاب کنید</option>
                                         <option value="0">سابقه نداشته</option>
                                         <option value="1">یک سال</option>
@@ -363,26 +465,27 @@
                                 <div class="form-group row">
                                     <label for="job" class="col-md-4 col-form-label text-md-right">شغل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="job" class="form-control " name="serial">
+                                        <input type="text" id="job" class="form-control " name="job" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل کار</label>
+                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل
+                                        کار</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="tel" class="form-control " name="serial">
+                                        <input type="text" id="tel" class="form-control " name="tel" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
                                         همراه</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="mobile" class="form-control " name="serial">
+                                        <input type="text" id="mobile" class="form-control " name="mobile" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="email" class="col-md-4 col-form-label text-md-right">ایمیل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="email" class="form-control " name="serial">
+                                        <input type="text" id="email" class="form-control " name="email" required>
                                     </div>
                                 </div>
                             </form>
@@ -399,32 +502,106 @@
                                 <div class="form-group row">
                                     <label for="name" class="col-md-4 col-form-label text-md-right">نام</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="name" class="form-control " name="serial">
+                                        <input type="text" id="mothername" class="form-control " name="mothername" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام خانوادگی</label>
+                                    <label for="name" class="col-md-4 col-form-label text-md-right">نام
+                                        خانوادگی</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="name" class="form-control " name="serial">
+                                        <input type="text" id="motherlastname" class="form-control " name="motherlastname" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ تولد</label>
+                                    <label for="birth" class="col-md-4 col-form-label text-md-right">تاریخ
+                                        تولد</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="birth" class="form-control " name="serial">
+                                        <input type="text" id="birth" class="form-control " name="birth" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره کد
+                                    <label for="National-code" class="col-md-4 col-form-label text-md-right">شماره
+                                        کد
                                         ملی</label>
                                     <div class="col-md-6">
                                         <input type="text" id="National-code" class="form-control col-md-10"
-                                            name="National-code" placeholder="کد ملی خود را وارد کنید">
+                                            name="National-code" placeholder="کد ملی خود را وارد کنید" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label for="id" class="col-md-4 col-form-label text-md-right">شماره
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="id" class="form-control" name="id"
+                                            placeholder="شماره شناسنامه خود را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="place" class="col-md-4 col-form-label text-md-right">محل صدور
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="place" class="form-control" name="place"
+                                            placeholder="محل صدور شناسنامه را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سریال
+                                        شناسنامه</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="serial" class="form-control " name="serial"
+                                            placeholder="سریال شناسنامه خود را وارد کنید" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="serial" class="col-md-4 col-form-label text-md-right">شماره سری
+                                        شناسنامه</label>
+                                    <div class="col-md-3">
+                                        <input type="text" id="seri" class="form-control " name="seri"
+                                            placeholder="سری شناسنامه " required>
+                                        <label for="Grade"> / </label>
+                                    </div>
+
+                                    <select name="Grade" class="form-control direc">
+                                        <option value="0">الف</option>
+                                        <option value="1">ب</option>
+                                        <option value="2">پ</option>
+                                        <option value="3">ت</option>
+                                        <option value="4">ث</option>
+                                        <option value="5">ج</option>
+                                        <option value="6">چ</option>
+                                        <option value="7">ح</option>
+                                        <option value="8">خ</option>
+                                        <option value="9">د</option>
+                                        <option value="10">ذ</option>
+                                        <option value="11">ر</option>
+                                        <option value="12">ز</option>
+                                        <option value="13">ژ</option>
+                                        <option value="14">س</option>
+                                        <option value="15">ش</option>
+                                        <option value="16">ص</option>
+                                        <option value="17">ض</option>
+                                        <option value="18">ط</option>
+                                        <option value="19">ظ</option>
+                                        <option value="20">ع</option>
+                                        <option value="21">غ</option>
+                                        <option value="22">ف</option>
+                                        <option value="23">ق</option>
+                                        <option value="24">ک</option>
+                                        <option value="25">گ</option>
+                                        <option value="26">ل</option>
+                                        <option value="27">م</option>
+                                        <option value="28">ن</option>
+                                        <option value="29">و</option>
+                                        <option value="30">ه</option>
+                                        <option value="31">ی</option>
+                                    </select>
+                                </div>
+                                <div class="form-group row">
                                     <label for="education" class="col-md-4 col-form-label text-md-right">تحصیلات</label>
-                                    <select name="education" class="col-md-4 form-control">
+                                    <select name="education" class="form-control drop" required>
                                         <option selected>انتخاب کنید</option>
                                         <option value="pish">سیکل</option>
                                         <option value="1">دیپلم</option>
@@ -438,7 +615,7 @@
                                 <div class="form-group row">
                                     <label for="Grade" class="col-md-4 col-form-label text-md-right">سابقه عضویت در
                                         انجمن اولیا</label>
-                                    <select name="Grade" class="col-md-4 form-control">
+                                    <select name="Grade" class="form-control drop" required>
                                         <option selected>انتخاب کنید</option>
                                         <option value="0">سابقه نداشته</option>
                                         <option value="1">یک سال</option>
@@ -456,26 +633,27 @@
                                 <div class="form-group row">
                                     <label for="job" class="col-md-4 col-form-label text-md-right">شغل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="job" class="form-control " name="serial">
+                                        <input type="text" id="job" class="form-control " name="job" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل کار</label>
+                                    <label for="tel" class="col-md-4 col-form-label text-md-right">تلفن محل
+                                        کار</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="tel" class="form-control " name="serial">
+                                        <input type="text" id="tel" class="form-control " name="tel" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
                                         همراه</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="mobile" class="form-control " name="serial">
+                                        <input type="text" id="mobile" class="form-control " name="mobile" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="email" class="col-md-4 col-form-label text-md-right">ایمیل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="email" class="form-control " name="serial">
+                                        <input type="text" id="email" class="form-control " name="email" required>
                                     </div>
                                 </div>
                             </form>
@@ -492,7 +670,7 @@
                                 <div class="form-group row">
                                     <label for="family" class="col-md-4 col-form-label text-md-right">وضعیت مسکن
                                         خانواده</label>
-                                    <select name="family" class="col-md-4 form-control">
+                                    <select name="family" class="form-control drop">
                                         <option selected>انتخاب کنید</option>
                                         <option value="0">اجاره</option>
                                         <option value="1">شخصی</option>
@@ -504,7 +682,7 @@
                                 <div class="form-group row">
                                     <label for="family1" class="col-md-4 col-form-label text-md-right">وضعیت
                                         خانواده</label>
-                                    <select name="family1" class="col-md-4 form-control">
+                                    <select name="family1" class="form-control drop">
                                         <option selected>انتخاب کنید</option>
                                         <option value="0">شهدا</option>
                                         <option value="1">جاویدالاثر</option>
@@ -515,22 +693,23 @@
                                     </select>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="address" class="col-md-4 col-form-label text-md-right">آدرس منزل</label>
+                                    <label for="address" class="col-md-4 col-form-label text-md-right">آدرس
+                                        منزل</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="address" class="form-control " name="address">
+                                        <input type="text" id="address" class="form-control " name="address" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="postcode" class="col-md-4 col-form-label text-md-right">کدپستی</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="postcode" class="form-control " name="postcode">
+                                        <input type="text" id="postcode" class="form-control " name="postcode" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="mobile" class="col-md-4 col-form-label text-md-right">شماره
                                         تلفن</label>
                                     <div class="col-md-6">
-                                        <input type="text" id="mobile" class="form-control " name="mobile">
+                                        <input type="text" id="mobile" class="form-control " name="mobile" required>
                                     </div>
                                 </div>
                             </form>
@@ -548,7 +727,7 @@
                                     <label for="grades" class="col-md-4 col-form-label text-md-right">توضیحات
                                         بیشتر</label>
                                     <div class="col-md-6">
-                                        <textarea type="" id="grades" class="form-control" name=""></textarea>
+                                        <textarea type="" id="other" class="form-control drop" name="other"></textarea>
                                     </div>
                                 </div>
                             </form>
@@ -556,15 +735,14 @@
                     </div><br><br>
                     <!-- End Of Other Information -->
 
-
                     <!-- Send -->
                     <input type="checkbox" id="opt" name="opt" value="Optimization">
                     <label for="opt"> تایید می شود که تمامی اطلاعات وارد شده صحیح می باشد</label><br><br>
                     <div class="col-md-6 offset-md-4">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-info" value="Submit Button">
                             ثبت نام
                         </button>
-                        <button type="reset" class="btn btn-danger">
+                        <button type="reset" class="btn btn-danger" value="reset">
                             پاک کردن اطلاعات
                         </button>
                     </div>
@@ -573,11 +751,11 @@
                 </div>
             </div>
         </div>
-        </div>
-        <!-- End Of form -->
+    </form>
+    <!-- End Of form -->
 
-        <!-- JavaScript File -->
-        <script src="./js/all.js"></script>
+    <!-- JavaScript File -->
+    <script src="./js/all.js"></script>
 </body>
 
 </html>
